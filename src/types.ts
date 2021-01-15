@@ -23,6 +23,8 @@ export interface ISetArguments<CreatedObject> {
   accountId: string;
   ifInState?: string | null;
   create?: { [temporaryId: string]: CreatedObject };
+  update?: { [id: string]: {[jsonPointer: string]: any}};
+  destroy?: string[]
 }
 
 export interface IQueryArguments<FilterCondition> {
