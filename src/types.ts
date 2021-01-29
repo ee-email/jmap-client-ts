@@ -95,7 +95,7 @@ export interface IEmailProperties {
   subject: string;
   size: number;
   preview: string;
-  attachments: Attachment[] | null;
+  attachments: IEmailBodyPart[] | null;
   createdModSeq: number;
   updatedModSeq: number;
   receivedAt: IUtcDate;
